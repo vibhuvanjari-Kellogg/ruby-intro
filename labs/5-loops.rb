@@ -10,6 +10,25 @@ diamonds = [2, 3, 4, 5, 6, 7, 8, 9, 10, "Jack", "Queen", "King", "Ace"]
 hearts = [2, 3, 4, 5, 6, 7, 8, 9, 10, "Jack", "Queen", "King", "Ace"]
 spades = [2, 3, 4, 5, 6, 7, 8, 9, 10, "Jack", "Queen", "King", "Ace"]
 
+# suits = [clubs, diamonds, hearts, spades]
+
+for card in clubs
+    puts "#{card} of Clubs"
+end
+
+for card in diamonds
+    puts "#{card} of Diamonds"
+end
+
+for card in hearts
+    puts "#{card} of Hearts"
+end
+
+for card in spades
+    puts "#{card} of Spades"
+end
+
+
 # Sample output:
 # 2 of Clubs
 # 3 of Clubs
@@ -25,6 +44,12 @@ spades = [2, 3, 4, 5, 6, 7, 8, 9, 10, "Jack", "Queen", "King", "Ace"]
 # combining these arrays.
 ranks = [2, 3, 4, 5, 6, 7, 8, 9, 10, "Jack", "Queen", "King", "Ace"]
 suits = ["Clubs", "Diamonds", "Hearts", "Spades"]
+
+for suit in suits
+    for card in ranks
+        puts "#{card} of #{suit}"
+    end
+end
 
 # CHALLENGE #2
 # Deal a poker hand. Shuffle the deck and "deal" (i.e. display) a 5 card hand (i.e. 5 cards from the deck).
