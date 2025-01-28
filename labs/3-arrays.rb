@@ -15,3 +15,21 @@
 # HINTS
 # Learn to read the documentation!
 # https://ruby-doc.org/core-2.7.0/Array.html
+
+
+slow_carb = ["chicken", "eggs", "lentils", "beans","grapefruit"]
+cheat_day = ["grapefruit", "yogurt", "snickers"]
+#p slow_carb
+#p cheat_day
+
+shared_list = slow_carb + cheat_day
+
+p shared_list
+#p shared_list.sort
+#p shared_list.uniq
+unique_sorted_list = shared_list.uniq.sort
+
+for item in unique_sorted_list
+    puts "buy #{item}"
+end
+
